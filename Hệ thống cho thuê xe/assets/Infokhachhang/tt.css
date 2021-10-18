@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+
+}
+
+
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.height {
+    height: 550px !important;
+}
+
+.margin-top {
+    margin-top: 210px !important;
+}
+
+.border {
+    border-radius: 10px !important;
+    width: 264px !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.padding-top {
+padding-top: 75px;
+}
+
+.text-color {
+    color: white;
+}
+
+
+#header {
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav {
+    position: relative;
+}
+
+.nav div {
+display: inline-block;
+}
+
+.nav > div  a {
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.nav .header-text {
+    margin-left: 111px;
+    font-size: 52px;
+    position: absolute;
+}
+
+
+.nav .header-contact {
+    margin-left: 500px;
+    position: relative;
+}
+
+.nav .header-contact a {
+    padding-left: 15px;
+}
+
+.nav .header-account {
+margin-left: 100px;
+position: absolute;
+
+}
+
+.nav .header-account a {
+    padding-left: 15px;
+}
+
+.nav  .header-account  a:hover {
+    color: teal;
+}
+
+.i1{
+    color: orange;
+    font-size: 18px;
+    /* margin-left: 214px; */
+    display: inline-block;
+}
+.desgin {
+    font-size: 26px;
+    /* margin-left: 214px; */
+    position: absolute;
+    top: 10px;
+    right: 205px;
+    display: inline-block;
+    color: orange;
+}
+
+.username {
+    color: white;
+    margin-left: 20px;
+  }
+.signout{
+    margin-left: 13px;
+    color: white;
+    text-decoration: none;
+    /* font-size: 18px; */
+    line-height: 60px;
+}
+
+.content {
+    margin-top: 56px;
+    height: 750px;
+background-color: rgb(218, 235, 240);
+}
+
+.infor {
+    background-color: white;
+    width: 500px;
+    height: 410px;
+    padding: 20px;
+    margin-left: 530px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+
+.thongtin{
+    color: #003C71;
+}
+
+.vuilong {
+    font-size: 13px;
+    font-style: italic;
+    margin: 20px auto;
+}
+
+.zero{
+    margin-left: 50px;
+    width: 300px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+.one{
+    width: 300px;
+    margin: 30px 0px 30px 46px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+.two {
+    margin-left: 78px;
+    width: 300px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+
+.three {
+    width: 427px;
+    height: 80px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.submit {
+    margin-top: 45px;
+    margin-left: 92px;
+    width: 250px;
+    height: 37px;
+    border: none;
+    background-color: orange;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pay{
+    width: 287px;
+    height: 120px;
+    display: inline-block;
+    float: right;
+    background-color: white;
+    margin-right: 314px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.pay-sum{
+    color: #003C71;
+}
+
+.pay-ks{
+    font-size: 14px;
+    color: #818180;
+    margin: 5px auto;
+    display: inline-block;
+}
+
+.money{
+    margin-left: 85px;
+    color: #26BED6;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEROTO - ĐỒNG HÀNH CÙNG BẠN</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="nav">
+                <div class="header-text">
+                    <h3 class="text-1"><a href="http://127.0.0.1:5500/index.html"> 𝕋𝟚𝕂</a></h3>
+                </div>
+
+                <div class="header-contact">
+                    <span><a href=""><i class="ti-mobile"></i> 0388303025</a></span>
+                    <span><a href=""><i class="ti-email"></i> yadehnka@gmail.com</a></span>
+                    <span><a href="https://www.facebook.com/profile.php?id=100034535832906"><i class="ti-facebook"></i>
+                            Facebook</a></span>
+                </div>
+
+                <div class="header-account">
+                    <span><a href=""><i class="ti-info-alt"></i> Hướng dẫn</a></span>
+                    
+                    <span><a href="/assets/createaccount/account.html">Đăng ký</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="Sign-in">
+            <div class="body-acc ">
+                <h3 class="signup">Đăng nhập tài khoản</h3>
+                <div  class="form-signup">
+                    <input type="text" name="username" id="username" placeholder="Điện thoại hoặc email" class="chitiet" required> <br>
+                    <input type="password" name="password" id="password" placeholder="Mật khẩu" class="chitiet" required> <br>
+                    <input type="checkbox" name="" id="" required> Nhớ tài khoản của tôi. <br>
+                    <button id="submit" class="chitiet">Đăng nhập</button>
+                </div>   
+            </div>
+
+        </div>
+        
+
+        </div><div id="footer">
+            <div class="footer-contaner">
+                <div class="logo">
+                    <img src="/assets/img/logo1.png" alt="" class="imglogo">
+                    <div class="mxh">
+                        <a href=""><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-youtube"></i></a>
+                        <a href=""><i class="ti-pinterest"></i></a>
+                        <a href=""><i class="ti-twitter"></i></a>
+                        <a href=""><i class="ti-linkedin"></i></a>
+                    </div>
+                </div>
+    
+                <div class="footer-pay">
+                    <h3 class="pay-text">Cách thức thanh toán</h3>
+                    <div class="pay-iteam">
+                        <img src="/assets/img/viettelpay.4f72df72.svg" alt="">
+                    </div>
+                    <div class="pay-iteam">
+                        <img src="/assets/img/momo.319dac36.png" alt="">
+                    </div>
+                    <div class="pay-iteam">
+                        <img src="/assets/img/data_image_png;base….png" alt="">
+                    </div>
+                    <div class="pay-iteam">
+                        <img src="/assets/img/data_image_png;base… (1).png" alt="">
+                    </div>
+                </div>
+    
+                <hr>
+    
+                <div class="company">
+                    © Công ty Cổ Phần Zeroto Việt Nam
+                </div>
+    
+                <div class="contact-end">
+                   <p> Địa chỉ: Số 6 - Khúc Trì - Kiến An - Hải Phòng. </p>
+                  <p> Email: yadehnka@gmail.com</p>
+                  <span>  Điện thoại: 0388303025 (9AM-9PM T2-T7)</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var taikhoan = document.querySelector("#username");
+        var matkhau = document.querySelector("#password");
+        var danhsach = JSON.parse(localStorage.getItem("taikhoan") || "[]");
+        var btn = document.querySelector("#submit");
+        btn.onclick = function () {
+          var status = false;
+          danhsach.forEach(function (item) {
+            if (
+              item.taikhoan === taikhoan.value &&
+              item.matkhau === matkhau.value
+            ) {
+              window.open("../Homeacount/homeacount.html", "_self");
+              localStorage.setItem("user", JSON.stringify(item.name));
+              status = true;
+            }
+          });
+          if (status === false) {
+            alert("Tài khoản mật khẩu không đúng");
+          }
+        };
+      </script>
+</body>
+</html>

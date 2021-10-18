@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEROTO - ĐỒNG HÀNH CÙNG BẠN</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="nav">
+                <div class="header-text">
+                    <a href="">𝕋𝟚𝕂</a>
+                </div>
+
+                <div class="header-contact">
+                    <span><a href=""><i class="ti-mobile"></i> 0388303025</a></span>
+                    <span><a href=""><i class="ti-email"></i> yadehnka@gmail.com</a></span>
+                    <span><a href="https://www.facebook.com/profile.php?id=100034535832906"><i class="ti-facebook"></i>
+                            Facebook</a></span>
+                </div>
+
+                <div class="header-account">
+                    <span><a href=""><i class="ti-info-alt"></i> Hướng dẫn</a></span>
+                    <span><a href="http://127.0.0.1:5500/assets/sign-in/signin.html">Đăng nhập</a></span>
+                    <span><a href="http://127.0.0.1:5500/assets/createaccount/account.html">Đăng ký</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="create-acc">
+           
+             <div class="body-acc">
+                <h3 class="signup">Đăng ký tài khoản</h3>
+                <div  class="form-signup">
+                    <input type="text" name="username" id="username" placeholder="Điện thoại hoặc email" class="chitiet" required> <br>
+                    <input type="text" name="name" id="fullname" placeholder="Tên hiển thị" class="chitiet" required> <br>
+                    <input type="password" name="password" id="password" placeholder="Mật khẩu" class="chitiet" required> <br>
+                     <!-- <input type="password" name="password-again" id="password-again" placeholder="Nhập lại mật khẩu" class="chitiet" required> <br> -->
+                     <input type="checkbox" name="checkbocx" id="" required> Tôi đã đọc và đồng ý với chính sách của Zeroto <br>
+                     <input type="submit" value="Đăng Ký" id="submit" class="chitiet">
+                </div>   
+            </div> 
+
+        </div>
+        
+
+        </div><div id="footer">
+            <div class="footer-contaner">
+                <div class="logo">
+                    <img src="/assets/img/logo1.png" alt="" class="imglogo">
+                    <div class="mxh">
+                        <a href=""><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-youtube"></i></a>
+                        <a href=""><i class="ti-pinterest"></i></a>
+                        <a href=""><i class="ti-twitter"></i></a>
+                        <a href=""><i class="ti-linkedin"></i></a>
+                    </div>
+                </div>
+    
+                <div class="footer-pay">
+                    <h3 class="pay-text">Cách thức thanh toán</h3>
+                    <div class="pay-iteam">
+                        <img src="/assets/img/viettelpay.4f72df72.svg" alt="">
+                    </div>
+                    <div class="pay-iteam">
+                        <img src="/assets/img/momo.319dac36.png" alt="">
+                    </div>
+                    <div class="pay-iteam">
+                        <img src="/assets/img/data_image_png;base….png" alt="">
+                    </div>
+                    <div class="pay-iteam">
+                        <img src="/assets/img/data_image_png;base… (1).png" alt="">
+                    </div>
+                </div>
+    
+                <hr>
+    
+                <div class="company">
+                    © Công ty Cổ Phần Zeroto Việt Nam
+                </div>
+    
+                <div class="contact-end">
+                   <p> Địa chỉ: Số 6 - Khúc Trì - Kiến An - Hải Phòng. </p>
+                  <p> Email: yadehnka@gmail.com</p>
+                  <span>  Điện thoại: 0388303025 (9AM-9PM T2-T7)</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var username = document.querySelector("#username");
+        var fullname = document.querySelector("#fullname");
+        var password = document.querySelector("#password");
+        var btn = document.querySelector("#submit");
+        var vtaikhoan, vmatkhau , vname;
+        btn.onclick = function () {
+          vtaikhoan = username.value;
+          vmatkhau = password.value;
+          vname = fullname.value;
+          var danhsach = JSON.parse(localStorage.getItem("taikhoan") || "[]");
+          danhsach.push({
+            name: vname,
+            taikhoan: vtaikhoan,
+            matkhau: vmatkhau,
+          });
+          localStorage.setItem("taikhoan", JSON.stringify(danhsach));
+          alert("Đăng kí thành công");
+          window.open("../sign-in/signin.html", "_self");
+        };
+      </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/Infokhachhang/waiting.css">
+    <link rel="stylesheet" href="/themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="nav">
+            <div class="header-text">
+                <h3 class="text-1"><a href="http://127.0.0.1:5500/assets/Homeacount/homeacount.html"> 𝕋𝟚𝕂</a></h3>
+            </div>
+
+            <div class="header-contact">
+                <span><a href=""><i class="ti-mobile"></i> 0388303025</a></span>
+                <span><a href=""><i class="ti-email"></i> yadehnka@gmail.com</a></span>
+                <span><a href="https://www.facebook.com/profile.php?id=100034535832906"><i class="ti-facebook"></i>
+                        Facebook</a></span>
+            </div>
+
+            <div class="header-account">
+                <span><a href=""><i class="ti-info-alt"></i> Hướng dẫn</a></span>
+                <span class="username"></span>
+                <a href="http://127.0.0.1:5500/index.html" class="signout">Đăng xuất</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="thongbao">
+            <h2 class="thongbaotext">Cảm ơn quý khách đã tin dùng</h2>
+            <h2 class="thongbaotext">Yêu cầu của quý khách đang được xử lý, vui lòng đợi ...</h2>
+            <h2 class="thongbaotext">Công ty chúng tôi sẽ phản hồi sớm nhất cho bạn</h2>
+            <h2 class="thongbaotext">Trân trọng !!!</h2>
+        </div>
+        <script>
+            var ten = JSON.parse(localStorage.getItem("user") || "[]");
+            var title = document.querySelector(".username");
+            title.innerHTML = ten;
+        </script>
+    </div>
+</body>
+</html>
